@@ -1,0 +1,2 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Absorbtionsspektrum}{3}
