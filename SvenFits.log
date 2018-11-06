@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.9)  6 NOV 2018 00:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.9)  6 NOV 2018 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,23 +1189,114 @@ File: ./absorbtion/frequencyCorrection.png Graphic file (type png)
 Package pdftex.def Info: ./absorbtion/frequencyCorrection.png  used on input li
 ne 52.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [3 <./absorbtion/frequencyCorrection.png>] (./SvenFits.aux) ) 
+<./absorbtion/fit.png, id=14, 462.528pt x 346.896pt>
+File: ./absorbtion/fit.png Graphic file (type png)
+<use ./absorbtion/fit.png>
+Package pdftex.def Info: ./absorbtion/fit.png  used on input line 74.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./absorbtion/frequencyCorrection.png>] [4 <./absorbtion/fit.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+[5]
+<./saturation/peak1/fit.png, id=34, 462.528pt x 346.896pt>
+File: ./saturation/peak1/fit.png Graphic file (type png)
+<use ./saturation/peak1/fit.png>
+Package pdftex.def Info: ./saturation/peak1/fit.png  used on input line 132.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./saturation/peak1/gaussCorrected.png, id=35, 462.528pt x 346.896pt>
+File: ./saturation/peak1/gaussCorrected.png Graphic file (type png)
+<use ./saturation/peak1/gaussCorrected.png>
+Package pdftex.def Info: ./saturation/peak1/gaussCorrected.png  used on input l
+ine 136.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./saturation/peak2/fit.png, id=36, 462.528pt x 346.896pt>
+File: ./saturation/peak2/fit.png Graphic file (type png)
+<use ./saturation/peak2/fit.png>
+Package pdftex.def Info: ./saturation/peak2/fit.png  used on input line 140.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./saturation/peak2/gaussCorrected.png, id=37, 462.528pt x 346.896pt>
+File: ./saturation/peak2/gaussCorrected.png Graphic file (type png)
+<use ./saturation/peak2/gaussCorrected.png>
+Package pdftex.def Info: ./saturation/peak2/gaussCorrected.png  used on input l
+ine 144.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./saturation/peak3/fit.png, id=38, 462.528pt x 346.896pt>
+File: ./saturation/peak3/fit.png Graphic file (type png)
+<use ./saturation/peak3/fit.png>
+Package pdftex.def Info: ./saturation/peak3/fit.png  used on input line 148.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./saturation/peak3/gaussCorrected.png, id=39, 462.528pt x 346.896pt>
+File: ./saturation/peak3/gaussCorrected.png Graphic file (type png)
+<use ./saturation/peak3/gaussCorrected.png>
+Package pdftex.def Info: ./saturation/peak3/gaussCorrected.png  used on input l
+ine 152.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./saturation/peak4/fit.png, id=40, 462.528pt x 346.896pt>
+File: ./saturation/peak4/fit.png Graphic file (type png)
+<use ./saturation/peak4/fit.png>
+Package pdftex.def Info: ./saturation/peak4/fit.png  used on input line 156.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./saturation/peak4/gaussCorrected.png, id=41, 462.528pt x 346.896pt>
+File: ./saturation/peak4/gaussCorrected.png Graphic file (type png)
+<use ./saturation/peak4/gaussCorrected.png>
+Package pdftex.def Info: ./saturation/peak4/gaussCorrected.png  used on input l
+ine 160.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./saturation/peak1/fit.png> <./saturation/peak1/gaussCorrected.png> <./satu
+ration/peak2/fit.png>] [7 <./saturation/peak2/gaussCorrected.png> <./saturation
+/peak3/fit.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+[8 <./saturation/peak3/gaussCorrected.png> <./saturation/peak4/fit.png>]
+[9 <./saturation/peak4/gaussCorrected.png>] (./SvenFits.aux) ) 
 Here is how much of TeX's memory you used:
- 16173 strings out of 494180
- 299927 string characters out of 6159675
- 459769 words of memory out of 5000000
- 19398 multiletter control sequences out of 15000+600000
- 534358 words of font info for 38 fonts, out of 8000000 for 9000
+ 16241 strings out of 494180
+ 301632 string characters out of 6159675
+ 463793 words of memory out of 5000000
+ 19454 multiletter control sequences out of 15000+600000
+ 538706 words of font info for 55 fonts, out of 8000000 for 9000
  417 hyphenation exceptions out of 8191
- 51i,11n,51p,10371b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 51i,12n,51p,10371b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on SvenFits.pdf (3 pages, 56100 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on SvenFits.pdf (9 pages, 389287 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
- 18 compressed objects within 1 object stream
+ 103 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

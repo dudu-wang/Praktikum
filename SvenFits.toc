@@ -1,2 +1,3 @@
 \babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Absorbtionsspektrum}{3}
+\contentsline {section}{\numberline {2}S\IeC {\"a}ttigungsspektroskopie}{5}
