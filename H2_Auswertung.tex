@@ -71,11 +71,23 @@ Somit spaltet sich die D2-Linie, die durch den Übergang zwischen den $5^2s_{1/2
 bestimmt werden kann.
 Ein Funktionsgenerator durchstimmt den Laser mit einer Frequenz von ca. 20 Hz und die Intensität wird mit einem Oszilloskop gespeichert.
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{Aufbau_1.png}
+\caption{Aufbau der Absorptionsspektroskopie}
+\end{figure}
+
 \subsection{Sättigungsspektroskopie}
 
 Ziel der Sättigungsspektroskopie ist es, die Dopplerverbreiterung zu vermeiden. Dabei ist der Unterschied zur Absorptionsspektroskopie, dass der Strahl die Zelle zweimal in umgekehrten Richtungen durchquert. Experimentell wird es umgesetzt, indem der linear polarisierte Strahl nach der Rubidium-Zelle durch einen ND-Filter abgeschwächt wird, durch ein $\lambda/4$ Plättchen zirkular polarisiert, in einem Spiegel reflektiert und wieder linear polarisiert wird, bevor er die Rubidium-Zelle nochmal durchläuft. Bei der Reflektion wird die zirkulare Polarisation umgedreht, sodass der Teststrahl nach der $\lambda/4$ Platte senkrecht zum Pumpstrahl polarisiert ist, und deshalb beim polarisierenden Strahlteiler komplett in der Diode reflektiert wird. Auch hier wird der Strahl durch eine Linse fokussiert.
 
-Bei diesem Versuch erwarten wir die selben Senkungen zu beobachten, wie in der Absorptionsspektroskopie, allerdings mit sogenannten Lamb-Dips. Wenn der Pumpstrahl die Resonanzfrequenz eines Übergangs trifft, regt er Atome im Gas an, und wenn diese Atome entlang der Verbreitungsachse des Strahls eine Geschwindigkeit nahe Null haben, wird aus Sicht dieser Atome der Teststrahl die selbe Frequenz besitzen wie der Pumpstrahl; allerdings können sie nicht durch den Teststrahl angeregt werden, da diese Anregung schon durch den Pumpstrahl gesättigt wurde. Somit entstehen Peaks im Intensitätsprofil.
+Bei diesem Versuch erwarten wir die selben Senkungen zu beobachten, wie in der Absorptionsspektroskopie, allerdings mit sogenannten Lamb-Dips. Wenn der Pumpstrahl die Resonanzfrequenz eines Übergangs trifft, regt er Atome im Gas an, und wenn diese Atome entlang der Verbreitungsachse des Strahls eine Geschwindigkeit nahe Null haben, wird aus Sicht dieser Atome der Teststrahl die selbe Frequenz besitzen wie der Pumpstrahl; allerdings können sie nicht durch den Teststrahl angeregt werden, da diese Anregung schon durch den Pumpstrahl gesättigt wurde. Somit entstehen Peaks im Intensitätsprofil. Außerdem entstehen durch einen ähnlichen Prozess die sogenannten Cross-Over-Peaks. Diese liegen vor, wenn die Laserfrequenz zwischen zwei Übergänge liegt, und so liegen Atome vor, die eine Geschwindigkeit besitzen, mit der sie sowohl vom Pumpstrahl als auch vom Teststrahl angeregt werden können, allerdings in unterschiedlichen Übergängen. So werden diese Atome durch den Pumpstrahl angeregt und können daher nicht vom Teststrahl nochmal angeregt werden, also wird der Teststrahl weniger absorbiert. Diese Cross-Over-Peaks haben oft eine höhere Intensität als die Lamb-Dips. (Die Bilder stammen aus \cite{Ref:3}).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{Aufbau_2.png}
+\caption{Aufbau der Sättigungsspektroskopie}
+\end{figure}
 
 \section{Auswertung}
 
@@ -111,6 +123,7 @@ Da man mit den Messdaten nicht die Übergänge von einem s-Hyperfeinniveau zu ve
 \begin{figure}[h]
 \centering
 \includegraphics[scale = 0.5]{./absorbtion/fit.png}
+\caption{Fit der Absorptionsspektroskopie}
 \end{figure}
 
 Die Abweichung des Fits an der linken Seite führen wir auf die Nichtlinearität der Durchstimmung des Lasers zurück. Der Fit weicht an der linken Seite nur vor dem ersten Peak des Referenzresonators ab. Unsere Interpolation von oben kann augenscheinlich nicht verwendet werden, um die Frequenz-Zeit Abhängigkeit links des ersten Peaks des Referenzresonators zu extrapolieren. Auch beim Experiment wurde beobachtet, dass der Laser in einem Frequenzbereich annähernd linear durchgestimmt wird, an den Rändern aber sehr nichtlinear.
@@ -125,7 +138,7 @@ Wir erhalten folgende Werte:
 T&=350 \pm 2 K
 \end{align*}
 
-Damit ergeben sich die Abstände im Termschema zu $1.103 \pm 0.002$GHz,  $2.909 \pm 0.003$GHz und $6.419 \pm 0.006$GHz. Die Abweichungen zu den Literaturwerten können zum Teil damit erklärt werden, dass wir die Übergänge zu unterschiedlichen p-Hyperfeinniveaus in dem Verfahren nicht auflösen konnten, und deshalb mit einer einzigen Gauß-Funktion gefittet haben. Da diese Kurve in der Tat die Summe dreier Kurven mit unterschiedlichen Frequenzen und Intensitäten ist, kann man diese Abstände nicht genau bestimmen. Außerdem kennen wir die Abstände zwichen den p-Niveaus im Rb-85 und im Rb-87 nicht.
+Damit ergeben sich die Abstände im Termschema zu $\nu_2 - \nu_1 = 1.103 \pm 0.002$GHz,  $\nu_3 - \nu_2 = 2.909 \pm 0.003$GHz und $\nu_4 - \nu_3 = 6.419 \pm 0.006$GHz. Die Abweichungen zu den Literaturwerten können zum Teil damit erklärt werden, dass wir die Übergänge zu unterschiedlichen p-Hyperfeinniveaus in dem Verfahren nicht auflösen konnten, und deshalb mit einer einzigen Gauß-Funktion gefittet haben. Da diese Kurve in der Tat die Summe dreier Kurven mit unterschiedlichen Frequenzen und Intensitäten ist, kann man diese Abstände nicht genau bestimmen. Außerdem kennen wir die Abstände zwichen den p-Niveaus im Rb-85 und im Rb-87 nicht.
 
 \subsection{Sättigungsspektroskopie}
 
@@ -172,13 +185,13 @@ gefittet. $I_0$ haben wir als Polynom ersten Grades gefittet. Die weiteren Fit P
 \centering
 \begin{tabular}{cc}
     \includegraphics[scale = 0.45]{./saturation/peak1/fit.png}  &  \includegraphics[scale = 0.45]{./saturation/peak1/gaussCorrected.png}  \\
-    {\footnotesize Peak 1} & {\footnotesize Peak 1 ohne Dopplerhintergrund}  \\
+    {\footnotesize Rb-87, F = 2} & {\footnotesize Rb-87, F = 2 ohne Dopplerhintergrund}  \\
     \includegraphics[scale = 0.45]{./saturation/peak2/fit.png}  &  \includegraphics[scale = 0.45]{./saturation/peak2/gaussCorrected.png}  \\
-    {\footnotesize Peak 2} & {\footnotesize Peak 2 ohne Dopplerhintergrund}  \\
+    {\footnotesize Rb-85, F = 3} & {\footnotesize Rb-85, F = 3 ohne Dopplerhintergrund}  \\
     \includegraphics[scale = 0.45]{./saturation/peak3/fit.png}  &  \includegraphics[scale = 0.45]{./saturation/peak3/gaussCorrected.png}  \\
-    {\footnotesize Peak 3} & {\footnotesize Peak 3 ohne Dopplerhintergrund}  \\
+    {\footnotesize Rb-85, F = 2} & {\footnotesize Rb-85, F = 2 ohne Dopplerhintergrund}  \\
     \includegraphics[scale = 0.45]{./saturation/peak4/fit.png}  &  \includegraphics[scale = 0.45]{./saturation/peak4/gaussCorrected.png}  \\
-    {\footnotesize Peak 4} &  {\footnotesize Peak 4 ohne Dopplerhintergrund}  \\
+    {\footnotesize Rb-87, F = 1} &  {\footnotesize Rb-87, F = 1 ohne Dopplerhintergrund}  \\
 \end{tabular}
 \caption{Fits}
 \label{fig:Abbildung1}
@@ -218,9 +231,9 @@ Wir erhalten folgende Frequenzen:
 \nu_{F'=2} &= 857.8 \pm 0.5 MHz  
 \end{align*}
 
-Damit ergeben sich die Differenzen zwischen den Niveaus zu $28 \pm 1 MHz$, $66.4 \pm 0.6MHz$ bzw. $64.1 \pm 0.8 MHz$ und $122.1 \pm 0.5 MHz$ für Rb 85 sowie $91 \pm 2 MHz$, $152.2 \pm 0.7 MHz$ bzw. $149 \pm 2 MHz$ und  $265.2 \pm 0.5 MHz$ für Rb 87.\\
+Damit ergeben sich die Differenzen zwischen den Niveaus zu $\nu_{F'=2} - \nu_{F'=1} = 28 \pm 1 MHz$, $\nu_{F'=3} - \nu_{F'=2} = 66.4 \pm 0.6MHz$ bzw. $64.1 \pm 0.8 MHz$ und $\nu_{F'=4} - \nu_{F'=3} = 122.1 \pm 0.5 MHz$ für Rb 85 sowie $\nu_{F'=1} - \nu_{F'=0} = 91 \pm 2 MHz$, $\nu_{F'=2} - \nu_{F'=1} = 152.2 \pm 0.7 MHz$ bzw. $149 \pm 2 MHz$ und  $\nu_{F'=3} - \nu_{F'=2} = 265.2 \pm 0.5 MHz$ für Rb 87.\\
 
-Man  kann nun noch versuchen, die Abstände der s-Hyperfeinniveaus beider Isotope genauer zu bestimmen, indem man mit $\nu_{Gauss} - \nu_i$ korrigiert, d.h., man betrachtet Übergänge zu den einzelnen p-Hyperfeinniveaus und berechnet daraus die Differenz. In Rb-85 ist das für die p-Niveaus mit $F=2$ und $F=3$, möglich, in Rb-87 fur $F=1$ und $F=2$. Man erhält
+Man  kann nun noch versuchen, die Abstände der s-Hyperfeinniveaus beider Isotope genauer zu bestimmen, indem man mit $\nu_{Gauss} - \nu_i$ korrigiert, d.h., man betrachtet die Übergänge zu den einzelnen p-Hyperfeinniveaus und berechnet daraus die Differenz. Hierbei verwenden wir die erhaltenen Werte für $\nu_{Gauss}$ aus der Absorptionsspektroskopie und die für $\nu_i$ aus der Sättigungsspektroskopie. In Rb-85 ist das für die p-Niveaus mit $F=2$ und $F=3$, möglich, in Rb-87 fur $F=1$ und $F=2$. Man erhält
 $3.07 \pm 0.01 GHz$ bzw $3.10 \pm 0.02 GHz$ für Rb-85 und $6.51 \pm 0.01 GHz$ bzw $6.68 \pm 0.02 GHz$.
 
 Unsere gemessene Werte für die p-Hyperfeinniveaus im Vergleich zu den Literaturwerten (\cite{Ref:1}, \cite{Ref:2}) sind in Abbildung \ref{fig:Abbildung2} dargestellt.
@@ -243,7 +256,7 @@ Die Durchstimmung des Lasers ist nicht linear, wir haben sie durch einen Polynom
 
 Die hohe Temperatur des Gases ($350K$) im Vergleich zur Raumtemperatur kann dadurch erklärt werden, dass das Gas vom Laser erhitzt wird. Dieser Effekt ist umso größer, je niedriger der Druck ist.
 
-Man beobachtet, dass die ermittelten Werte zwar nah an den Literaturwerten liegen, aber nicht immer kompatibel sind. In der Tat können wir erwarten, dass unsere Messunsicherheiten größer als die vom Fit ergebenen Werten sind, aufgrund der Schwankungen der verwendeten Geräte, wie die schon besprochene Durchstimmung des Lasers. Da wir sowohl positive als auch negative Abweichungen beobachten, ist es unwahrscheinlich, dass ein systematischer Fehler vorliegt.
+Man beobachtet, dass die ermittelten Werte zwar nah an den Literaturwerten liegen, aber nicht immer kompatibel sind. In der Tat können wir erwarten, dass unsere Messunsicherheiten größer als die vom Fit ergebenen Werten sind, möglicherweise wegen Schwankungen des Lasers. Da wir sowohl positive als auch negative Abweichungen beobachten, ist es unwahrscheinlich, dass ein systematischer Fehler vorliegt.
 
 Eine größere Abweichung ist im Wert der Energiedifferenz zwischen den p-Hyperfeinniveaus $F=0$ und $F=1$ bei Rb 87 zu erkennen. Ein möglicher Grund dafür ist die Tatsache, dass der mittlere Peak unscharf und unsymmetrsich ist, wie es im letzten Plot der Abbildung \ref{fig:Abbildung1} zu sehen ist. Daher ist die Resonanzfrequenz nicht genau zu ermitteln.
 
