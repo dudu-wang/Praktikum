@@ -54,18 +54,7 @@ In der Quantenmechanik werden die Elektronenorbitale von Atomen durch diskrete E
 \begin{equation*}
     I(\omega) = I_0 \frac{1}{\pi} \frac{\gamma/2}{(\omega - \omega_0)^2 + (\gamma / 2)^2}
 \end{equation*}
-Die Doppler-Verbreiterung entsteht wegen der statistischen Geschwindigkeitsverteilung der Teilchen im Gas. Dadurch kommt es zu einer Doppler-Verschiebung des Lichts, gemäß
-\begin{equation*}
-    \omega' = \omega_0 \left(1 - \frac{v_z}{c} \right)
-\end{equation*}
-Somit berechnet sich die absorbierte Intensität zu einem Gauß-Peak:
-\begin{equation*}
-    I(\omega) = I(\omega_0) e^{- \left( \frac{\omega - \omega_0}{\delta \omega_D/\sqrt{4 ln 2}} \right)^2}
-\end{equation*}
-wobei
-\begin{equation*}
-    \delta \omega_D = \frac{\omega_0}{c} \sqrt{\frac{8 kT ln2}{m}}
-\end{equation*}
+Die Doppler-Verbreiterung wird später diskutiert.
 
 Das Rubidium-Atom besitzt nur ein Valenzelektron, d. h., die inneren Schalen sind abgeschlossen und tragen nicht für den Gesamtdrehimpuls bzw. Spin bei. Außerdem kann man die Wechselwirkungen zwischen dieses Valenzelektron und die restlichen vernachlässigen, weshalb es als wasserstoffähnlich bezeichnet wird. Wir betrachten die beiden Isotope Rb-85 und Rb-87, die stabil sind, und dessen Kernspins jeweils $5/2$ bzw. $3/2$ beträgt. Wir berücksichtigen zum einen die Grobstruktur, die durch den Abstand der Elektronen zum Kern ensteht, die Feinstruktur, in der die Spin-Bahn-Kopplung berücksichtigt wird, d.h. die Wechselwirkung zwischen den von dem Spin und dem Bahndrehimpuls erzeugten magnetischen Momenten, und die Hyperfeinstruktur, bei der die Kopplung zwischen den Gesamtdrehimpuls und den Kernspin betrachtet wird.
 
@@ -97,12 +86,14 @@ Es werden die Peaks des Referenzresonator gegen die Zeit aufgetragen und mit ein
 \begin{figure}[h]
 \centering
 \includegraphics[scale = 0.5]{./absorbtion/frequencyCorrection}
+\caption{Durchstimmung des Lasers}
 \end{figure}
 
 Die Frequenz des Lasers sei $\nu_0+\nu$, wobei $\nu_0=\frac{c}{780\mathrm{nm}}$ die ungefähre Frequenz des Lasers ist. Es ist $\nu \ll \nu_0$.
 Betrachte einen Übergang mit Energiedifferenz $h\nu_1$ und einer Linienform ohne Dopplerverbreiterung $L(\nu)$.  Die Absorbierte Intensität bei Laserfrequenz $\nu$ ist proportional zu
 
 $$\int_{-\infty}^{\infty} dv f_{MB}(v)L(\nu\sqrt{1-v/c}) \approx \int_{-\infty}^{\infty} dv f_{MB}(v)L(\nu_0+\nu-\nu_0 v/(2c))$$
+wobei $f_{MB}$ die Maxwell-Boltzmann-Verteilung ist.
 
 Die Näherung ist gerechtfertigt, da für thermische Geschwindigkeiten $v \ll c$ und weil $\nu \ll \nu_0$. Da $L$ scharf um $\nu_0 + \nu_1$ gepeakt ist, kann man $L$ als Delta-Funktion approximieren. Die absorbierte Intensität ist daher proportional zu
 
@@ -127,14 +118,14 @@ Die Abweichung des Fits an der linken Seite führen wir auf die Nichtlinearität
 Wir erhalten folgende Werte:
 
 \begin{align*}
-\nu_1 &= 0.082 \pm 0.001 GHz \\
-\nu_2 &= 1.1854 \pm 0.0003 GHz \\
-\nu_3 &= 4.094 \pm 0.002 GHz\\
-\nu_4 &= 6.501 \pm 0.005 GHz \\
+\nu_1 &= 0.082 \pm 0.001 \mathrm{GHz} \\
+\nu_2 &= 1.1854 \pm 0.0003 \mathrm{GHz}\\
+\nu_3 &= 4.094 \pm 0.002 \mathrm{GHz}\\
+\nu_4 &= 6.501 \pm 0.005 \mathrm{GHz}\\
 T&=350 \pm 2 K
 \end{align*}
 
-Damit ergeben sich die Abstände im Termschema zu $1.103 \pm 0.002 GHz$,  $2.909 \pm 0.003 GHz$ und $6.419 \pm 0.006 GHz$. Die Abweichungen zu den Literaturwerten können zum Teil damit erklärt werden, dass wir die Übergänge zu unterschiedlichen p-Hyperfeinniveaus in dem Verfahren nicht auflösen konnten, und deshalb mit einer einzigen Gauß-Funktion gefittet haben. Da diese Kurve in der Tat die Summe dreier Kurven mit unterschiedlichen Frequenzen und Intensitäten ist, kann man diese Abstände nicht genau bestimmen. Außerdem kennen wir die Abstände zwichen den p-Niveaus im Rb-85 und im Rb-87 nicht.
+Damit ergeben sich die Abstände im Termschema zu $1.103 \pm 0.002$GHz,  $2.909 \pm 0.003$GHz und $6.419 \pm 0.006$GHz. Die Abweichungen zu den Literaturwerten können zum Teil damit erklärt werden, dass wir die Übergänge zu unterschiedlichen p-Hyperfeinniveaus in dem Verfahren nicht auflösen konnten, und deshalb mit einer einzigen Gauß-Funktion gefittet haben. Da diese Kurve in der Tat die Summe dreier Kurven mit unterschiedlichen Frequenzen und Intensitäten ist, kann man diese Abstände nicht genau bestimmen. Außerdem kennen wir die Abstände zwichen den p-Niveaus im Rb-85 und im Rb-87 nicht.
 
 \subsection{Sättigungsspektroskopie}
 
@@ -144,13 +135,14 @@ $$n(\nu, v) = \sum_{i=1}^N A_i L_i(\nu_0+\nu-\nu_0 v/(2c))$$
 
 mit Konstanten $A_1, ..., A_N$. Die gemessene Intensität beträgt dann
 
-$$I(\nu) = I_0(\nu)-\int_{-\infty}^{\infty} f_{MB}(v)(1-n(\nu, v))\sum_{j=1}^N B_j L_i(\nu_0+\nu+\nu_0 v/(2c))$$
+$$I(\nu) = I_0(\nu)-\int_{-\infty}^{\infty} f_{MB}(v)(1-n(\nu, v))\sum_{j=1}^N B_j L_j(\nu_0+\nu+\nu_0 v/(2c))$$
 
-Mit Konstanten $B_1, ..., B_N$ und Ausgangsintensität $I_0(\nu)$. Der erste Summand im Integraten ist der selbe Term wie bei der Absorbtionsspektroskopie. Den zweiten Term nähern wir, indem wir ausnutzen, dass  $L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$ nur für $v \approx 2c \frac{\nu_i-\nu}{\nu_0}$ nicht verschwindend ist. Deshalb können wir $f_{MB}(v)$ als konstant annehmen und haben nur noch den Term
+Mit Konstanten $B_1, ..., B_N$ und Ausgangsintensität $I_0(\nu)$. Der erste Summand im Integraten ist der selbe Term wie bei der Absorbtionsspektroskopie. Den zweiten Term nähern wir, indem wir ausnutzen, dass  $L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$ nur für $v \approx 2c \frac{\nu_i-\nu}{\nu_0}$ nicht verschwindend ist. Deshalb können wir $f_{MB}(v)$ als konstant annehmen und es bleibt nur noch den Term
 
 $$T_{ij}=\int_{-\infty}^\infty dv L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$$
+übrig.
 
-Sei $L_\gamma$ die Lorenzverteilung um 0 mit FWHM $\gamma$. Wir nehmen $L_i(x) = L_{\gamma_i}(x-(\nu_0+\nu_i)$ and. Dann ist
+Sei $L_\gamma$ die Lorenzverteilung um 0 mit FWHM $\gamma$. Wir nehmen $L_i(x) = L_{\gamma_i}(x-(\nu_0+\nu_i))$ an. Dann ist
 
 \begin{align*}
 T_{ij} &= \frac{2c}{\nu_0}\int_{-\infty}^\infty du L_{\gamma_i}(2\nu-(\nu_i+\nu_j)-u)L_{\gamma_j}(u)\\
