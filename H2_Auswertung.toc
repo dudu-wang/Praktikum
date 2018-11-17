@@ -1,9 +1,9 @@
-\select@language {ngerman}
+\babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Grundlagen}{3}
 \contentsline {section}{\numberline {2}Versuchsdurchf\IeC {\"u}hrung}{4}
 \contentsline {subsection}{\numberline {2.1}Absorptionsspektroskopie}{4}
 \contentsline {subsection}{\numberline {2.2}S\IeC {\"a}ttigungsspektroskopie}{4}
-\contentsline {section}{\numberline {3}Auswertung}{5}
-\contentsline {subsection}{\numberline {3.1}Absorbtionsspektrum}{5}
-\contentsline {subsection}{\numberline {3.2}S\IeC {\"a}ttigungsspektroskopie}{6}
-\contentsline {subsection}{\numberline {3.3}Fehlerdiskussion}{10}
+\contentsline {section}{\numberline {3}Auswertung}{6}
+\contentsline {subsection}{\numberline {3.1}Absorbtionsspektrum}{6}
+\contentsline {subsection}{\numberline {3.2}S\IeC {\"a}ttigungsspektroskopie}{7}
+\contentsline {subsection}{\numberline {3.3}Fehlerdiskussion}{11}

@@ -101,24 +101,23 @@ Es werden die Peaks des Referenzresonator gegen die Zeit aufgetragen und mit ein
 \caption{Durchstimmung des Lasers}
 \end{figure}
 
-Die Frequenz des Lasers sei $\nu_0+\nu$, wobei $\nu_0=\frac{c}{780\mathrm{nm}}$ die ungefähre Frequenz des Lasers ist. Es ist $\nu \ll \nu_0$.
-Betrachte einen Übergang mit Energiedifferenz $h\nu_1$ und einer Linienform ohne Dopplerverbreiterung $L(\nu)$.  Die Absorbierte Intensität bei Laserfrequenz $\nu$ ist proportional zu
 
-$$\int_{-\infty}^{\infty} dv f_{MB}(v)L(\nu\sqrt{1-v/c}) \approx \int_{-\infty}^{\infty} dv f_{MB}(v)L(\nu_0+\nu-\nu_0 v/(2c))$$
-wobei $f_{MB}$ die Maxwell-Boltzmann-Verteilung ist.
+Die absorbierte Intensität beträgt bei Berücksichtigung der Doppler-Verbeiterung nach \cite{Ref:3}:
 
-Die Näherung ist gerechtfertigt, da für thermische Geschwindigkeiten $v \ll c$ und weil $\nu \ll \nu_0$. Da $L$ scharf um $\nu_0 + \nu_1$ gepeakt ist, kann man $L$ als Delta-Funktion approximieren. Die absorbierte Intensität ist daher proportional zu
+$$I(\nu) = I_0 e^{\frac{(\nu-\nu_U)^2mc^2}{2\nu_U^2 k_B T}}$$
 
-$$f_{MB}(2c(\nu-\nu_1)/\nu_0) \sim e^{-mc^2(\nu-\nu1)^2/(2k_BT\nu_0^2)}$$
+wobei $\nu_U$ die Frequenz des betrachteten Übergangs ist. Betrachten wir einen Frequenz des Lasers von $\nu_0+\nu$, wobei $\nu_0 = \frac{c}{780 \mathrm{ nm}}$ die ungefähre Frequenz des Lasers ist, sodass $\nu \ll \nu_0$. Dann kann unabhängig von der genauen Frequenz des betrachteten Übergangs das $\nu_U$ im Nenner des Exponenten durch $\nu_0$ ersetzt werden. \\
 
-Für $N$ Übergänge bei Frequenzen $\nu_0+\nu_1,...,\nu_0+\nu_N$ lautet die Formel für die gemessene Intensität an der Photodiode also
+Für Übergänge bei $\nu_0 + \nu_1$, $\nu_0+\nu_2$, ... $\nu_0 + \nu_N$ beträgt die nicht absorbierte Intensität dann
 
 \begin{equation}
-I(\nu) = I_0(\nu) - \sum_{n=1}^N I_n e^{-mc^2(\nu-\nu_n)^2/(2k_BT\nu_0^2)}
+I(\nu) = I_0(\nu) - \sum_{n=1}^N I_n e^{\frac{(\nu-\nu_n)^2mc^2}{2\nu_0^2 k_B T}}
 \label{AbsorbtionFit}
 \end{equation}
 
-Da man mit den Messdaten nicht die Übergänge von einem s-Hyperfeinniveau zu verschiedenen p-Hyperfeinniveaus unterscheiden kann, fassen wir alle Übergänge, die vom selben s-Hyperfeinniveau ausgehen, zu einem zusammen. Wir fitten (\ref{AbsorbtionFit}) an die Messdaten. Dabei verwenden wir für $I_0$ ein Polynom zweiter Ordnung.
+wobei $I_0(\nu)$ die Intensität des Lasers vor Durchgang durch die Rubidiumzelle ist.
+
+Da man mit den Messdaten nicht die Übergänge von einem s-Hyperfeinniveau zu verschiedenen p-Hyperfeinniveaus unterscheiden kann, fassen wir alle Übergänge, die vom selben s-Hyperfeinniveau ausgehen, zu einem zusammen. Wir verwenden also $N=4$. Wir fitten (\ref{AbsorbtionFit}) an die Messdaten. Dabei verwenden wir für $I_0$ ein Polynom zweiter Ordnung.
 
 \begin{figure}[h]
 \centering
@@ -142,18 +141,27 @@ Damit ergeben sich die Abstände im Termschema zu $\nu_2 - \nu_1 = 1.103 \pm 0.0
 
 \subsection{Sättigungsspektroskopie}
 
-Betrachten wir die Übergänge wie oben. Der vom Pumpstrahl mit Frequenz $\nu_0+\nu$ angeregte Anteil der Atome mit Geschwindigkeit $v$ beträgt
+Wir betrachten nun alle 12 Übergänge getrennt. Sei $L_i(\cdot )$ die Linienbreite des $i$-ten Übergang, bevor die Dopplerverbeiterung betrachtet wird. Sie erreicht ihr Maximum bei $\nu_0+\nu_i$. Atome, die sich mit Geschwindigkeit $v$ relativ zum Laser bewegen, sehen die verschobene Linienform
+$$\tilde{L_i}(\nu_0+\nu) = L_i((\nu_0+\nu)\sqrt{1-(v/c)^2}) \approx L_i(\nu_0+\nu-\nu_0 v/(2c))$$
+wobei die Näherung gilt da $v \ll c$ und $\nu \ll \nu_0$.\\
+  Der vom Pumpstrahl mit Frequenz $\nu_0+\nu$ angeregte Anteil der Atome mit Geschwindigkeit $v$ beträgt damit
 
 $$n(\nu, v) = \sum_{i=1}^N A_i L_i(\nu_0+\nu-\nu_0 v/(2c))$$
 
-mit Konstanten $A_1, ..., A_N$. Die gemessene Intensität beträgt dann
+mit Konstanten $A_1, ..., A_N$.\\
 
-$$I(\nu) = I_0(\nu)-\int_{-\infty}^{\infty} f_{MB}(v)(1-n(\nu, v))\sum_{j=1}^N B_j L_j(\nu_0+\nu+\nu_0 v/(2c))$$
+Die Geschwindigkeit der Rubidiumatom ist nach der Maxwell-Verteilung $f_{MB}(v) = \sqrt{m/(2\pi k_B T)} e^{-mv^2/(2k_BT)}$ verteilt. Die von Atome mit Geschwindigkeit $v$ absorbierte Intensität des Teststrahl ist proportional zur Anteil dieser Atome im Grundzustand $\mathrm{d}v f_{MB}(v)(1-n(\nu, v))$ und zur Übergangswahrscheinlichkeit des $j$-ten Übergangs für die vom Atom wahrgenommene dopplerverschobene Frequenz $L_j(\nu_0+\nu+\nu_0 v/(2c))$. Die Dopplerverschiebung hat dabei das entgegengesetzte Vorzeichen, da der Teststrahl die Atome in umgekehrte Richtung wie der Pumpstrahl durchquert.
 
-Mit Konstanten $B_1, ..., B_N$ und Ausgangsintensität $I_0(\nu)$. Der erste Summand im Integraten ist der selbe Term wie bei der Absorbtionsspektroskopie. Den zweiten Term nähern wir, indem wir ausnutzen, dass  $L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$ nur für $v \approx 2c \frac{\nu_i-\nu}{\nu_0}$ nicht verschwindend ist. Deshalb können wir $f_{MB}(v)$ als konstant annehmen und es bleibt nur noch den Term
+ Die gemessene Intensität beträgt dann
+\begin{align*}
+I(\nu) &= I_0(\nu)-\int_{-\infty}^{\infty} \mathrm{d}v f_{MB}(v)(1-n(\nu, v))\sum_{j=1}^N B_j L_j(\nu_0+\nu+\nu_0 v/(2c)) \\
+&= I_0 -\sum_j B_j \int_{-\infty}^{\infty} \mathrm{d}v f_{MB} L_j(\nu_0+\nu+\nu_0 v/(2c)) \\
+&+\sum_{i,j} A_iB_j \int_{-\infty}^{\infty} \mathrm{d}v f_{MB} L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))
+\end{align*}
 
+Mit Konstanten $B_1, ..., B_N$ und Ausgangsintensität $I_0(\nu)$. Der zweite Summand ist der selbe Term wie bei der Absorbtionsspektroskopie. Den dritten Summanden nähern wir, indem wir ausnutzen, dass  $L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$ nur für $v \approx 2c \frac{\nu_i-\nu}{\nu_0}$ nicht verschwindend ist. Deshalb können wir $f_{MB}(v)$ als konstant annehmen und der dritte Summand wird $\sum_{i,j} A_iB_j f_{MB}(2c \frac{\nu_i-\nu}{\nu_0}) T_{ij}$ mit
 $$T_{ij}=\int_{-\infty}^\infty dv L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$$
-übrig.
+
 
 Sei $L_\gamma$ die Lorenzverteilung um 0 mit FWHM $\gamma$. Wir nehmen $L_i(x) = L_{\gamma_i}(x-(\nu_0+\nu_i))$ an. Dann ist
 
@@ -163,6 +171,8 @@ T_{ij} &= \frac{2c}{\nu_0}\int_{-\infty}^\infty du L_{\gamma_i}(2\nu-(\nu_i+\nu_
 &= \frac{2c}{\nu_0} L_{\gamma_i+\gamma_j}(2\nu-(\nu_i+\nu_j)) \\
 \end{align*}
 
+Für $i=j$ beschreibt $T_{ij}$ einen Lamb-Dip, sonst einen Crossover-Peak. 
+
 Damit ergibt sich insgesamt eine Fitfunktion
 \begin{equation}
 I(\nu) = I_0(\nu)-\sum_{i=1}^N B_i e^{-mc^2(\nu-\nu_i)^2/(2k_BT\nu_0^2)} +\sum_{\substack{i,j=1\\i\leq j}}^N C_{ij} L_{\gamma_i+\gamma_j}(2\nu-(\nu_i+\nu_j))
@@ -170,7 +180,7 @@ I(\nu) = I_0(\nu)-\sum_{i=1}^N B_i e^{-mc^2(\nu-\nu_i)^2/(2k_BT\nu_0^2)} +\sum_{
 \end{equation}
 
 
-mit Konstanten $C_{ij}$. Wir haben $T_{ij}=T_{ji}$ ausgenutzt.\\
+mit Konstanten $C_{ij} = (2-\delta_{ij})A_iB_jf_{MB}(2c \frac{\nu_i-\nu}{\nu_0})\frac{2c}{\nu_0}$. Wir haben $T_{ij}=T_{ji}$ ausgenutzt.\\
 
 Wir haben jeden der vier großen Peaks individuell gefittet. Ein Fit mit der Funktion aus (\ref{SaettigungsFit1}) war jedoch leider nicht möglich, der Fit ist nicht konvergent. Wir führen das darauf zurück, dass die Variation der $B_i$ die Funktion kaum verändert, solange ihre Summe konstant bleibt. Stattdessen haben wir, wie bei der Absorbtionsspektroskopie, die Gausspeaks zu einem einzelnen zusammengefasst und mit der Funktion
 
@@ -179,7 +189,7 @@ I(\nu) = I_0(\nu)-B e^{-mc^2(\nu-\nu_{Gauss})^2/(2k_BT\nu_0^2)} +\sum_{\substack
 \label{SaettigungsFit2}
 \end{equation}
 
-gefittet. $I_0$ haben wir als Polynom ersten Grades gefittet. Die weiteren Fit Parameter sind $B$, $\nu_{Gauss}$, $T$, $C_{ij}$ und $\gamma_i$. Das Ergebnis der Fits mit und ohne Dopplerhintergrund ist in Abbildung~\ref{fig:Abbildung1} dargestellt.
+gefittet. $I_0$ haben wir als Polynom ersten Grades gefittet. Die weiteren Fit Parameter sind $B$, $\nu_{Gauss}$, $T$, $C_{ij}$ und $\gamma_i$. Das Fitten wird vereinfacht, dass die FWHM-Breiten der Crossover Peaks sich als Mittelwerte der FWHM-Breiten der Lamb-Dips ergeben. Das Ergebnis der Fits mit und ohne Dopplerhintergrund ist in Abbildung~\ref{fig:Abbildung1} dargestellt.
 
 \begin{figure}[p]
 \centering
