@@ -1,9 +1,10 @@
 \babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Grundlagen}{3}
-\contentsline {section}{\numberline {2}Versuchsdurchf\IeC {\"u}hrung}{4}
-\contentsline {subsection}{\numberline {2.1}Absorptionsspektroskopie}{4}
-\contentsline {subsection}{\numberline {2.2}S\IeC {\"a}ttigungsspektroskopie}{4}
-\contentsline {section}{\numberline {3}Auswertung}{6}
-\contentsline {subsection}{\numberline {3.1}Absorbtionsspektrum}{6}
-\contentsline {subsection}{\numberline {3.2}S\IeC {\"a}ttigungsspektroskopie}{7}
-\contentsline {subsection}{\numberline {3.3}Fehlerdiskussion}{11}
+\contentsline {section}{\numberline {2}Versuchsdurchf\IeC {\"u}hrung}{5}
+\contentsline {subsection}{\numberline {2.1}Absorptionsspektroskopie}{5}
+\contentsline {subsection}{\numberline {2.2}S\IeC {\"a}ttigungsspektroskopie}{5}
+\contentsline {section}{\numberline {3}Auswertung}{7}
+\contentsline {subsection}{\numberline {3.1}Absorbtionsspektrum}{7}
+\contentsline {subsection}{\numberline {3.2}S\IeC {\"a}ttigungsspektroskopie}{8}
+\contentsline {subsection}{\numberline {3.3}Fehlerdiskussion}{14}
+\contentsline {section}{\numberline {4}Abschluss}{15}

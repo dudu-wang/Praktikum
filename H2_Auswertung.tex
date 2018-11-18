@@ -50,59 +50,13 @@
 
 \section{Grundlagen}
 
-In der Quantenmechanik werden die Elektronenorbitale von Atomen durch diskrete Energieniveaus beschrieben. Dabei kann es zu Übergänge zwischen diesen Zuständen kommen, bei denen ein Photon absorbiert bzw. emittiert wird. Die Frequenz dieses Photons wird dann gemäß der Planck-Formel durch $E_2 - E_1 = h \nu$ gegeben. Durch Messung dieser Resonanzfrequenz $\nu$ kann man die Abstände der Energieniveaus bestimmen. Allerdings lässt sich diese Spektrallinie nicht beliebig scharf messen, sondern sie besitzt eine gewisse Linienbreite. Grund dafür sind, u.a., die Stoßverbreiterung, die durch Wechselwirkungen zwischen verschiedenen Atomen verursacht wird, die Dopplerverbreiterung und die natürliche Linienbreite. Die natürliche Linienbreite kommt dadurch zustande, dass diese angeregte Zustände nur kurzlebig sind, und wegen der Energie-Zeit-Unschärfe ist die Energie dieses angeregten Zustandes also nicht genau definiert. Die Linie nimmt die Form eines Lorentz-Peaks:
+In der Quantenmechanik werden die Elektronenorbitale von Atomen durch diskrete Energieniveaus beschrieben. Dabei kann es zu Übergänge zwischen diesen Zuständen kommen, bei denen ein Photon absorbiert bzw. emittiert wird. Die Frequenz dieses Photons wird dann gemäß der Planck-Formel durch $E_2 - E_1 = h \nu$ gegeben. Durch Messung dieser Resonanzfrequenz $\nu$ kann man die Abstände der Energieniveaus bestimmen, und somit Auskunft über die innere Struktur von den Atomen bekommen. Allerdings lässt sich diese Spektrallinie nicht beliebig scharf messen, sondern sie besitzt eine gewisse Linienbreite. Grund dafür sind, u.a., die Stoßverbreiterung, die durch Wechselwirkungen zwischen verschiedenen Atomen verursacht wird, die Dopplerverbreiterung und die natürliche Linienbreite. Die natürliche Linienbreite kommt dadurch zustande, dass diese angeregte Zustände nur kurzlebig sind, und wegen der Energie-Zeit-Unschärfe ist die Energie dieses angeregten Zustandes also nicht genau definiert. Die Linie nimmt die Form eines Lorentz-Peaks:
 \begin{equation*}
     I(\omega) = I_0 \frac{1}{\pi} \frac{\gamma/2}{(\omega - \omega_0)^2 + (\gamma / 2)^2}
 \end{equation*}
-Die Doppler-Verbreiterung wird später diskutiert.
 
-Das Rubidium-Atom besitzt nur ein Valenzelektron, d. h., die inneren Schalen sind abgeschlossen und tragen nicht für den Gesamtdrehimpuls bzw. Spin bei. Außerdem kann man die Wechselwirkungen zwischen dieses Valenzelektron und die restlichen vernachlässigen, weshalb es als wasserstoffähnlich bezeichnet wird. Wir betrachten die beiden Isotope Rb-85 und Rb-87, die stabil sind, und dessen Kernspins jeweils $5/2$ bzw. $3/2$ beträgt. Wir berücksichtigen zum einen die Grobstruktur, die durch den Abstand der Elektronen zum Kern ensteht, die Feinstruktur, in der die Spin-Bahn-Kopplung berücksichtigt wird, d.h. die Wechselwirkung zwischen den von dem Spin und dem Bahndrehimpuls erzeugten magnetischen Momenten, und die Hyperfeinstruktur, bei der die Kopplung zwischen den Gesamtdrehimpuls und den Kernspin betrachtet wird.
-
-Somit spaltet sich die D2-Linie, die durch den Übergang zwischen den $5^2s_{1/2}$ und den $5^2p_{3/2}$ Zuständen erzeugt wird, in 6 Linien auf.
-
-\section{Versuchsdurchführung}
-
-\subsection{Absorptionsspektroskopie}
-
- Bei der Absorptionsspektroskopie messen wir das transmittierte Licht durch das Rubidium-Gas. Dabei erwarten wir, dass bei der Durchstimmung der Laserfrequenz eine Senkung der transmittierten Intensität bei den Übergangsfrequenzen beobachtet wird. Das Experiment wurde so aufgebaut, dass ein Laserstrahl durch ein Prismenpaar geschickt wird, damit er rund wird, dann durchquert er ein $\lambda /2$ Plättchen und einen polarisierenden Strahlteiler, die Rubidium-Zelle, und wird schließlich durch eine Linse in die Photodiode fokussiert, wo dann die Intensität des Lichts gemessen wird. Der reflektierte Teil im Strahlteiler wird in einem Referenzresonator der Länge 10cm geleitet, damit der freie Spektralbereich nach 
-\begin{equation*}
-	\Delta \nu = \frac{c}{2d}
-\end{equation*}
-bestimmt werden kann.
-Ein Funktionsgenerator durchstimmt den Laser mit einer Frequenz von ca. 20 Hz und die Intensität wird mit einem Oszilloskop gespeichert.
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\textwidth]{Aufbau_1.png}
-\caption{Aufbau der Absorptionsspektroskopie}
-\end{figure}
-
-\subsection{Sättigungsspektroskopie}
-
-Ziel der Sättigungsspektroskopie ist es, die Dopplerverbreiterung zu vermeiden. Dabei ist der Unterschied zur Absorptionsspektroskopie, dass der Strahl die Zelle zweimal in umgekehrten Richtungen durchquert. Experimentell wird es umgesetzt, indem der linear polarisierte Strahl nach der Rubidium-Zelle durch einen ND-Filter abgeschwächt wird, durch ein $\lambda/4$ Plättchen zirkular polarisiert, in einem Spiegel reflektiert und wieder linear polarisiert wird, bevor er die Rubidium-Zelle nochmal durchläuft. Bei der Reflektion wird die zirkulare Polarisation umgedreht, sodass der Teststrahl nach der $\lambda/4$ Platte senkrecht zum Pumpstrahl polarisiert ist, und deshalb beim polarisierenden Strahlteiler komplett in der Diode reflektiert wird. Auch hier wird der Strahl durch eine Linse fokussiert.
-
-Bei diesem Versuch erwarten wir die selben Senkungen zu beobachten, wie in der Absorptionsspektroskopie, allerdings mit sogenannten Lamb-Dips. Wenn der Pumpstrahl die Resonanzfrequenz eines Übergangs trifft, regt er Atome im Gas an, und wenn diese Atome entlang der Verbreitungsachse des Strahls eine Geschwindigkeit nahe Null haben, wird aus Sicht dieser Atome der Teststrahl die selbe Frequenz besitzen wie der Pumpstrahl; allerdings können sie nicht durch den Teststrahl angeregt werden, da diese Anregung schon durch den Pumpstrahl gesättigt wurde. Somit entstehen Peaks im Intensitätsprofil. Außerdem entstehen durch einen ähnlichen Prozess die sogenannten Cross-Over-Peaks. Diese liegen vor, wenn die Laserfrequenz zwischen zwei Übergänge liegt, und so liegen Atome vor, die eine Geschwindigkeit besitzen, mit der sie sowohl vom Pumpstrahl als auch vom Teststrahl angeregt werden können, allerdings in unterschiedlichen Übergängen. So werden diese Atome durch den Pumpstrahl angeregt und können daher nicht vom Teststrahl nochmal angeregt werden, also wird der Teststrahl weniger absorbiert. Diese Cross-Over-Peaks haben oft eine höhere Intensität als die Lamb-Dips. (Die Bilder stammen aus \cite{Ref:3}).
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=\textwidth]{Aufbau_2.png}
-\caption{Aufbau der Sättigungsspektroskopie}
-\end{figure}
-
-\section{Auswertung}
-
-\subsection{Absorbtionsspektrum}
-
-Es werden die Peaks des Referenzresonator gegen die Zeit aufgetragen und mit einem Polynom dritter Ordung gefittet, um die Nichtlinearität der Verstimmung des Lasers zu korrigieren.
-
-\begin{figure}[h]
-\centering
-\includegraphics[scale = 0.5]{./absorbtion/frequencyCorrection}
-\caption{Durchstimmung des Lasers}
-\end{figure}
-
-
-Die absorbierte Intensität beträgt bei Berücksichtigung der Doppler-Verbeiterung nach \cite{Ref:3}:
+Die Doppler-Verbreiterung entsteht wegen der Geschwindigkeitsverteilung der Atome im Gas. Diese Geschwindigkeit entlang der Ausbreitungsachse des Lichts bewirkt, dass diese Atome die Frequenz Dopplerverschoben sehen, gemäß $\omega' = \omega_0 \left( 1 - \frac{v_z}{c} \right) $.
+Die absorbierte Intensität beträgt dann nach \cite{Ref:3}:
 
 $$I(\nu) = I_0 e^{\frac{(\nu-\nu_U)^2mc^2}{2\nu_U^2 k_B T}}$$
 
@@ -117,6 +71,51 @@ I(\nu) = I_0(\nu) - \sum_{n=1}^N I_n e^{\frac{(\nu-\nu_n)^2mc^2}{2\nu_0^2 k_B T}
 
 wobei $I_0(\nu)$ die Intensität des Lasers vor Durchgang durch die Rubidiumzelle ist.
 
+Das Rubidium-Atom besitzt nur ein Valenzelektron, d. h., die inneren Schalen sind abgeschlossen und tragen nicht für den Gesamtdrehimpuls bzw. Spin bei. Außerdem kann man die Wechselwirkungen zwischen dieses Valenzelektron und die restlichen vernachlässigen, weshalb es als wasserstoffähnlich bezeichnet wird. Wir betrachten die beiden Isotope Rb-85 und Rb-87, die stabil sind, und dessen Kernspins jeweils $5/2$ bzw. $3/2$ beträgt. Wir berücksichtigen zum einen die Grobstruktur, die durch den Abstand der Elektronen zum Kern ensteht, die Feinstruktur, in der die Spin-Bahn-Kopplung berücksichtigt wird, d.h. die Wechselwirkung zwischen den von dem Spin und dem Bahndrehimpuls erzeugten magnetischen Momenten, und die Hyperfeinstruktur, bei der die Kopplung zwischen den Gesamtdrehimpuls und den Kernspin betrachtet wird.
+
+Somit spaltet sich die D2-Linie, die durch den Übergang zwischen den $5^2s_{1/2}$ und den $5^2p_{3/2}$ Zuständen erzeugt wird, in 6 Linien auf.
+
+\section{Versuchsdurchführung}
+
+\subsection{Absorptionsspektroskopie}
+
+ Bei der Absorptionsspektroskopie messen wir das transmittierte Licht durch das Rubidium-Gas. Dabei erwarten wir, dass bei der Durchstimmung der Laserfrequenz eine Senkung der transmittierten Intensität bei den Übergangsfrequenzen beobachtet wird. Das Experiment wurde so aufgebaut, dass ein Laserstrahl durch ein Prismenpaar geschickt wird, damit er rund wird, dann durchquert er ein $\lambda /2$ Plättchen und einen polarisierenden Strahlteiler, die Rubidium-Zelle, und wird schließlich durch eine Linse in die Photodiode fokussiert, wo dann die Intensität des Lichts gemessen wird. Der reflektierte Teil im Strahlteiler wird in einem Referenzresonator der Länge 10 cm geleitet, damit der freie Spektralbereich nach 
+\begin{equation*}
+	\Delta \nu = \frac{c}{2d}
+\end{equation*}
+bestimmt werden kann.
+Ein Funktionsgenerator durchstimmt den Laser mit einer Frequenz von ca. 20 Hz und die Intensität wird mit einem Oszilloskop gespeichert.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{Aufbau_1.png}
+\caption{Aufbau der Absorptionsspektroskopie  (aus \cite{Ref:3})}
+\end{figure}
+
+\subsection{Sättigungsspektroskopie}
+
+Ziel der Sättigungsspektroskopie ist es, die Dopplerverbreiterung zu vermeiden. Dabei ist der Unterschied zur Absorptionsspektroskopie, dass der Strahl die Zelle zweimal in umgekehrten Richtungen durchquert. Experimentell wird es umgesetzt, indem der linear polarisierte Strahl nach der Rubidium-Zelle durch einen ND-Filter abgeschwächt wird, durch ein $\lambda/4$ Plättchen zirkular polarisiert, in einem Spiegel reflektiert und wieder linear polarisiert wird, bevor er die Rubidium-Zelle nochmal durchläuft. Bei der Reflektion wird die zirkulare Polarisation umgedreht, sodass der Teststrahl nach der $\lambda/4$ Platte senkrecht zum Pumpstrahl polarisiert ist, und deshalb beim polarisierenden Strahlteiler komplett in der Diode reflektiert wird. Auch hier wird der Strahl durch eine Linse fokussiert.
+
+Bei diesem Versuch erwarten wir die selben Senkungen zu beobachten, wie in der Absorptionsspektroskopie, allerdings mit sogenannten Lamb-Dips. Wenn der Pumpstrahl die Resonanzfrequenz eines Übergangs trifft, regt er Atome im Gas an, und wenn diese Atome entlang der Verbreitungsachse des Strahls eine Geschwindigkeit nahe Null haben, wird aus Sicht dieser Atome der Teststrahl die selbe Frequenz besitzen wie der Pumpstrahl; allerdings können sie nicht durch den Teststrahl angeregt werden, da diese Anregung schon durch den Pumpstrahl gesättigt wurde. Somit entstehen Peaks im Intensitätsprofil. Außerdem entstehen durch einen ähnlichen Prozess die sogenannten Cross-Over-Peaks. Diese liegen vor, wenn die Laserfrequenz zwischen zwei Übergänge liegt, und so liegen Atome vor, die eine Geschwindigkeit besitzen, mit der sie sowohl vom Pumpstrahl als auch vom Teststrahl angeregt werden können, allerdings in unterschiedlichen Übergängen. So werden diese Atome durch den Pumpstrahl angeregt und können daher nicht vom Teststrahl nochmal angeregt werden, also wird der Teststrahl weniger absorbiert. Diese Cross-Over-Peaks haben oft eine höhere Intensität als die Lamb-Dips.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{Aufbau_2.png}
+\caption{Aufbau der Sättigungsspektroskopie (aus \cite{Ref:3})}
+\end{figure}
+
+\section{Auswertung}
+
+\subsection{Absorbtionsspektrum}
+
+Es werden die Peaks des Referenzresonator gegen die Zeit aufgetragen und mit einem Polynom dritter Ordung gefittet, um die Nichtlinearität der Verstimmung des Lasers zu korrigieren.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale = 0.5]{./absorbtion/frequencyCorrection}
+\caption{Durchstimmung des Lasers}
+\end{figure}
+
 Da man mit den Messdaten nicht die Übergänge von einem s-Hyperfeinniveau zu verschiedenen p-Hyperfeinniveaus unterscheiden kann, fassen wir alle Übergänge, die vom selben s-Hyperfeinniveau ausgehen, zu einem zusammen. Wir verwenden also $N=4$. Wir fitten (\ref{AbsorbtionFit}) an die Messdaten. Dabei verwenden wir für $I_0$ ein Polynom zweiter Ordnung.
 
 \begin{figure}[h]
@@ -130,14 +129,14 @@ Die Abweichung des Fits an der linken Seite führen wir auf die Nichtlinearität
 Wir erhalten folgende Werte:
 
 \begin{align*}
-\nu_1 &= 0.082 \pm 0.001 \mathrm{GHz} \\
-\nu_2 &= 1.1854 \pm 0.0003 \mathrm{GHz}\\
-\nu_3 &= 4.094 \pm 0.002 \mathrm{GHz}\\
-\nu_4 &= 6.501 \pm 0.005 \mathrm{GHz}\\
-T&=350 \pm 2 K
+\nu_1 &= 0.082 \pm 0.001 \text{ GHz} \\
+\nu_2 &= 1.1854 \pm 0.0003 \text{ GHz}\\
+\nu_3 &= 4.094 \pm 0.002 \text{ GHz}\\
+\nu_4 &= 6.501 \pm 0.005 \text{ GHz}\\
+T&=350 \pm 2 \text{ K}
 \end{align*}
 
-Damit ergeben sich die Abstände im Termschema zu $\nu_2 - \nu_1 = 1.103 \pm 0.002$GHz,  $\nu_3 - \nu_2 = 2.909 \pm 0.003$GHz und $\nu_4 - \nu_3 = 6.419 \pm 0.006$GHz. Die Abweichungen zu den Literaturwerten können zum Teil damit erklärt werden, dass wir die Übergänge zu unterschiedlichen p-Hyperfeinniveaus in dem Verfahren nicht auflösen konnten, und deshalb mit einer einzigen Gauß-Funktion gefittet haben. Da diese Kurve in der Tat die Summe dreier Kurven mit unterschiedlichen Frequenzen und Intensitäten ist, kann man diese Abstände nicht genau bestimmen. Außerdem kennen wir die Abstände zwichen den p-Niveaus im Rb-85 und im Rb-87 nicht.
+Damit ergeben sich die Abstände im Termschema zu $\nu_2 - \nu_1 = 1.103 \pm 0.002$ GHz,  $\nu_3 - \nu_2 = 2.909 \pm 0.003$ GHz und $\nu_4 - \nu_3 = 6.419 \pm 0.006$ GHz. Die Abweichungen zu den Literaturwerten können zum Teil damit erklärt werden, dass wir die Übergänge zu unterschiedlichen p-Hyperfeinniveaus in dem Verfahren nicht auflösen konnten, und deshalb mit einer einzigen Gauß-Funktion gefittet haben. Da diese Kurve in der Tat die Summe dreier Kurven mit unterschiedlichen Frequenzen und Intensitäten ist, kann man diese Abstände nicht genau bestimmen. Außerdem kennen wir die Abstände zwichen den p-Niveaus im Rb-85 und im Rb-87 nicht.
 
 \subsection{Sättigungsspektroskopie}
 
@@ -150,20 +149,20 @@ $$n(\nu, v) = \sum_{i=1}^N A_i L_i(\nu_0+\nu-\nu_0 v/(2c))$$
 
 mit Konstanten $A_1, ..., A_N$.\\
 
-Die Geschwindigkeit der Rubidiumatom ist nach der Maxwell-Verteilung $f_{MB}(v) = \sqrt{m/(2\pi k_B T)} e^{-mv^2/(2k_BT)}$ verteilt. Die von Atome mit Geschwindigkeit $v$ absorbierte Intensität des Teststrahl ist proportional zur Anteil dieser Atome im Grundzustand $\mathrm{d}v f_{MB}(v)(1-n(\nu, v))$ und zur Übergangswahrscheinlichkeit des $j$-ten Übergangs für die vom Atom wahrgenommene dopplerverschobene Frequenz $L_j(\nu_0+\nu+\nu_0 v/(2c))$. Die Dopplerverschiebung hat dabei das entgegengesetzte Vorzeichen, da der Teststrahl die Atome in umgekehrte Richtung wie der Pumpstrahl durchquert.
+Die Geschwindigkeit der Rubidiumatome entlang der Ausbreitungsachse ist Gaußverteilt: $f_{Gauß}(v) = \sqrt{m/(2\pi k_B T)} e^{-mv^2/(2k_BT)}$. Die von Atome mit Geschwindigkeit $v$ absorbierte Intensität des Teststrahl ist proportional zur Anteil dieser Atome im Grundzustand $\mathrm{d}v f_{Gauß}(v)(1-n(\nu, v))$ und zur Übergangswahrscheinlichkeit des $j$-ten Übergangs für die vom Atom wahrgenommene dopplerverschobene Frequenz $L_j(\nu_0+\nu+\nu_0 v/(2c))$. Die Dopplerverschiebung hat dabei das entgegengesetzte Vorzeichen, da der Teststrahl die Atome in umgekehrte Richtung wie der Pumpstrahl durchquert.
 
  Die gemessene Intensität beträgt dann
 \begin{align*}
-I(\nu) &= I_0(\nu)-\int_{-\infty}^{\infty} \mathrm{d}v f_{MB}(v)(1-n(\nu, v))\sum_{j=1}^N B_j L_j(\nu_0+\nu+\nu_0 v/(2c)) \\
-&= I_0 -\sum_j B_j \int_{-\infty}^{\infty} \mathrm{d}v f_{MB} L_j(\nu_0+\nu+\nu_0 v/(2c)) \\
-&+\sum_{i,j} A_iB_j \int_{-\infty}^{\infty} \mathrm{d}v f_{MB} L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))
+I(\nu) &= I_0(\nu)-\int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß}(v)(1-n(\nu, v))\sum_{j=1}^N B_j L_j(\nu_0+\nu+\nu_0 v/(2c)) \\
+&= I_0 -\sum_j B_j \int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß} L_j(\nu_0+\nu+\nu_0 v/(2c)) \\
+&+\sum_{i,j} A_iB_j \int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß} L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))
 \end{align*}
 
-Mit Konstanten $B_1, ..., B_N$ und Ausgangsintensität $I_0(\nu)$. Der zweite Summand ist der selbe Term wie bei der Absorbtionsspektroskopie. Den dritten Summanden nähern wir, indem wir ausnutzen, dass  $L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$ nur für $v \approx 2c \frac{\nu_i-\nu}{\nu_0}$ nicht verschwindend ist. Deshalb können wir $f_{MB}(v)$ als konstant annehmen und der dritte Summand wird $\sum_{i,j} A_iB_j f_{MB}(2c \frac{\nu_i-\nu}{\nu_0}) T_{ij}$ mit
+Mit Konstanten $B_1, ..., B_N$ und Ausgangsintensität $I_0(\nu)$. Der zweite Summand ist der selbe Term wie bei der Absorbtionsspektroskopie. Den dritten Summanden nähern wir, indem wir ausnutzen, dass  $L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$ nur für $v \approx 2c \frac{\nu_i-\nu}{\nu_0}$ nicht verschwindend ist. Deshalb können wir $f_{Gauß}(v)$ als konstant annehmen und der dritte Summand wird $\sum_{i,j} A_iB_j f_{Gauß}(2c \frac{\nu_i-\nu}{\nu_0}) T_{ij}$ mit
 $$T_{ij}=\int_{-\infty}^\infty dv L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$$
 
 
-Sei $L_\gamma$ die Lorenzverteilung um 0 mit FWHM $\gamma$. Wir nehmen $L_i(x) = L_{\gamma_i}(x-(\nu_0+\nu_i))$ an. Dann ist
+Sei $L_\gamma$ die Lorentzverteilung um 0 mit FWHM $\gamma$. Wir nehmen $L_i(x) = L_{\gamma_i}(x-(\nu_0+\nu_i))$ an. Dann ist
 
 \begin{align*}
 T_{ij} &= \frac{2c}{\nu_0}\int_{-\infty}^\infty du L_{\gamma_i}(2\nu-(\nu_i+\nu_j)-u)L_{\gamma_j}(u)\\
@@ -180,16 +179,16 @@ I(\nu) = I_0(\nu)-\sum_{i=1}^N B_i e^{-mc^2(\nu-\nu_i)^2/(2k_BT\nu_0^2)} +\sum_{
 \end{equation}
 
 
-mit Konstanten $C_{ij} = (2-\delta_{ij})A_iB_jf_{MB}(2c \frac{\nu_i-\nu}{\nu_0})\frac{2c}{\nu_0}$. Wir haben $T_{ij}=T_{ji}$ ausgenutzt.\\
+mit Konstanten $C_{ij} = (2-\delta_{ij})A_iB_jf_{Gauß}(2c \frac{\nu_i-\nu}{\nu_0})\frac{2c}{\nu_0}$. Wir haben $T_{ij}=T_{ji}$ ausgenutzt.\\
 
-Wir haben jeden der vier großen Peaks individuell gefittet. Ein Fit mit der Funktion aus (\ref{SaettigungsFit1}) war jedoch leider nicht möglich, der Fit ist nicht konvergent. Wir führen das darauf zurück, dass die Variation der $B_i$ die Funktion kaum verändert, solange ihre Summe konstant bleibt. Stattdessen haben wir, wie bei der Absorbtionsspektroskopie, die Gausspeaks zu einem einzelnen zusammengefasst und mit der Funktion
+Wir haben jeden der vier großen Peaks individuell gefittet. Ein Fit mit der Funktion aus (\ref{SaettigungsFit1}) war jedoch leider nicht möglich, der Fit ist nicht konvergent. Wir führen das darauf zurück, dass die Variation der $B_i$ die Funktion kaum verändert, solange ihre Summe konstant bleibt. Stattdessen haben wir, wie bei der Absorbtionsspektroskopie, die Gaußpeaks zu einem einzelnen zusammengefasst und mit der Funktion
 
  \begin{equation}
-I(\nu) = I_0(\nu)-B e^{-mc^2(\nu-\nu_{Gauss})^2/(2k_BT\nu_0^2)} +\sum_{\substack{i,j=1\\i\leq j}}^N C_{ij} L_{\gamma_i+\gamma_j}(2\nu-(\nu_i+\nu_j))
+I(\nu) = I_0(\nu)-B e^{-mc^2(\nu-\nu_{Gauß})^2/(2k_BT\nu_0^2)} +\sum_{\substack{i,j=1\\i\leq j}}^N C_{ij} L_{\gamma_i+\gamma_j}(2\nu-(\nu_i+\nu_j))
 \label{SaettigungsFit2}
 \end{equation}
 
-gefittet. $I_0$ haben wir als Polynom ersten Grades gefittet. Die weiteren Fit Parameter sind $B$, $\nu_{Gauss}$, $T$, $C_{ij}$ und $\gamma_i$. Das Fitten wird vereinfacht, dass die FWHM-Breiten der Crossover Peaks sich als Mittelwerte der FWHM-Breiten der Lamb-Dips ergeben. Das Ergebnis der Fits mit und ohne Dopplerhintergrund ist in Abbildung~\ref{fig:Abbildung1} dargestellt.
+gefittet. $I_0$ haben wir als Polynom ersten Grades gefittet. Die weiteren Fit Parameter sind $B$, $\nu_{Gauß}$, $T$, $C_{ij}$ und $\gamma_i$. Das Fitten wird vereinfacht, dass die FWHM-Breiten der Crossover Peaks sich als Mittelwerte der FWHM-Breiten der Lamb-Dips ergeben. Das Ergebnis der Fits mit und ohne Dopplerhintergrund ist in Abbildung~\ref{fig:Abbildung1} dargestellt.
 
 \begin{figure}[p]
 \centering
@@ -212,47 +211,49 @@ Wir erhalten folgende Frequenzen:
 Übergänge von Rb 87 von $F=2$:
 
 \begin{align*}
-\nu_{F'=1} &= 105.7 \pm 0.4 MHz \\
-\nu_{F'=2} &= 257.9 \pm 0.3 MHz \\
-\nu_{F'=3} &= 523.1 \pm 0.2 MHz  
+\nu_{F'=1} &= 106 \pm 4 \text{ MHz} \\
+\nu_{F'=2} &= 258 \pm 4 \text{ MHz} \\
+\nu_{F'=3} &= 523 \pm 4 \text{ MHz}  
 \end{align*}
 
 Übergänge von Rb 85 von $F=3$:
 
 \begin{align*}
-\nu_{F'=2} &= 454.2 \pm 0.3 MHz \\
-\nu_{F'=3} &= 520.6 \pm 0.3 MHz \\
-\nu_{F'=4} &= 642.7 \pm 0.2 MHz  
+\nu_{F'=2} &= 454 \pm 4 \text{ MHz} \\
+\nu_{F'=3} &= 521 \pm 4 \text{ MHz} \\
+\nu_{F'=4} &= 643 \pm 4 \text{ MHz}  
 \end{align*}
 
 Übergänge von Rb 85 von $F=2$:
 
 \begin{align*}
-\nu_{F'=1} &= 147.0 \pm 0.5 MHz \\
-\nu_{F'=2} &= 174.1 \pm 0.5 MHz \\
-\nu_{F'=3} &= 238.2 \pm 0.3 MHz  
+\nu_{F'=1} &= 147 \pm 4 \text{ MHz} \\
+\nu_{F'=2} &= 174 \pm 4 \text{ MHz} \\
+\nu_{F'=3} &= 238 \pm 4 \text{ MHz}  
 \end{align*}
 
 Übergänge von Rb 87 von $F=1$:
 
 \begin{align*}
-\nu_{F'=0} &= 617.4 \pm 0.8 MHz \\
-\nu_{F'=1} &= 708.6 \pm 0.7 MHz \\
-\nu_{F'=2} &= 857.8 \pm 0.5 MHz  
+\nu_{F'=0} &= 617 \pm 4 \text{ MHz} \\
+\nu_{F'=1} &= 709 \pm 4 \text{ MHz} \\
+\nu_{F'=2} &= 858 \pm 4 \text{ MHz}  
 \end{align*}
 
-Damit ergeben sich die Differenzen zwischen den Niveaus zu $\nu_{F'=2} - \nu_{F'=1} = 28 \pm 1 MHz$, $\nu_{F'=3} - \nu_{F'=2} = 66.4 \pm 0.6MHz$ bzw. $64.1 \pm 0.8 MHz$ und $\nu_{F'=4} - \nu_{F'=3} = 122.1 \pm 0.5 MHz$ für Rb 85 sowie $\nu_{F'=1} - \nu_{F'=0} = 91 \pm 2 MHz$, $\nu_{F'=2} - \nu_{F'=1} = 152.2 \pm 0.7 MHz$ bzw. $149 \pm 2 MHz$ und  $\nu_{F'=3} - \nu_{F'=2} = 265.2 \pm 0.5 MHz$ für Rb 87.\\
+Damit ergeben sich die Differenzen zwischen den Niveaus zu $\nu_{F'=2} - \nu_{F'=1} = 28 \pm 6$ MHz, $\nu_{F'=3} - \nu_{F'=2} = 66 \pm 6$ MHz bzw. $64 \pm 6$ MHz und $\nu_{F'=4} - \nu_{F'=3} = 122 \pm 6$ MHz für Rb 85 sowie $\nu_{F'=1} - \nu_{F'=0} = 91 \pm 6$ MHz, $\nu_{F'=2} - \nu_{F'=1} = 152 \pm 6$ MHz bzw. $149 \pm 6$ MHz und  $\nu_{F'=3} - \nu_{F'=2} = 265 \pm 6$ MHz für Rb 87.\\
 
-Man  kann nun noch versuchen, die Abstände der s-Hyperfeinniveaus beider Isotope genauer zu bestimmen, indem man mit $\nu_{Gauss} - \nu_i$ korrigiert, d.h., man betrachtet die Übergänge zu den einzelnen p-Hyperfeinniveaus und berechnet daraus die Differenz. Hierbei verwenden wir die erhaltenen Werte für $\nu_{Gauss}$ aus der Absorptionsspektroskopie und die für $\nu_i$ aus der Sättigungsspektroskopie. In Rb-85 ist das für die p-Niveaus mit $F=2$ und $F=3$, möglich, in Rb-87 fur $F=1$ und $F=2$. Man erhält
-$3.07 \pm 0.01 GHz$ bzw $3.10 \pm 0.02 GHz$ für Rb-85 und $6.51 \pm 0.01 GHz$ bzw $6.68 \pm 0.02 GHz$.
+Man  kann nun noch versuchen, die Abstände der s-Hyperfeinniveaus beider Isotope genauer zu bestimmen, indem man mit $\nu_{Gauß} - \nu_i$ korrigiert, d.h., man betrachtet die Übergänge zu den einzelnen p-Hyperfeinniveaus und berechnet daraus die Differenz. Hierbei verwenden wir die erhaltenen Werte für $\nu_{Gauß}$ aus der Absorptionsspektroskopie und die für $\nu_i$ aus der Sättigungsspektroskopie. In Rb-85 ist das für die p-Niveaus mit $F=2$ und $F=3$, möglich, in Rb-87 fur $F=1$ und $F=2$. Man erhält
+$3.07 \pm 0.01$ GHz bzw $3.10 \pm 0.02$ GHz für Rb-85 und $6.51 \pm 0.01$ GHz bzw $6.68 \pm 0.02$ GHz.
 
 Unsere gemessene Werte für die p-Hyperfeinniveaus im Vergleich zu den Literaturwerten (\cite{Ref:1}, \cite{Ref:2}) sind in Abbildung \ref{fig:Abbildung2} dargestellt.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
 \begin{tabular}{cc}
-    \includegraphics[width = 0.5\textwidth]{daten_Rb-85.png}  &  \includegraphics[width = 0.5\textwidth]{daten_Rb-87.png}  \\
-    {\footnotesize Rb-85} & {\footnotesize Rb-87}  \\
+    \includegraphics[width = \textwidth]{daten_Rb-85.png}  \\
+    {\footnotesize Rb-85}  \\
+   \includegraphics[width = \textwidth]{daten_Rb-87.png}  \\
+    {\footnotesize Rb-87}  \\
 \end{tabular}
 \caption{Werte im Vergleich}
 \label{fig:Abbildung2}
@@ -264,11 +265,15 @@ Die beobachtete natürliche Linienbreite der Lamb-Dips ist kein Messfehler, denn
 
 Die Durchstimmung des Lasers ist nicht linear, wir haben sie durch einen Polynom 3. Grades gefittet. Bei der Betrachtung der einzelnen Peaks bei der Sättigungsspektroskopie hatten wir jeweils nur zwei Werte aus den Referenzresonator zur Verfügung, sodass wir die Durchstimmung des Lasers als linear annähern mussten. Man hätte diese Durchstimmung korrigieren können, dafür bräuchte man aber das Signal vom Referenzresonator und man müsste die Lasereinstellung fest lassen. In unserem Versuch mussten wir die Einstellungen vom Laser gelegentlich ändern, um ein schärferes Bild der einzelnen Peaks in der Sättigungsspektroskopie zu bekommen.
 
-Die hohe Temperatur des Gases ($350K$) im Vergleich zur Raumtemperatur kann dadurch erklärt werden, dass das Gas vom Laser erhitzt wird. Dieser Effekt ist umso größer, je niedriger der Druck ist.
+Wie schon besprochen, besteht jede Gauß-Kurve in der Tat aus drei unterschiedlichen Kurven, mit unterschidlichen Frequenzen. Dies bewirkt, dass die beobachtete Kurve breiter erscheint als die bei Raumtemperatur erwartete Dopplerverbreiterung. Deshalb bekamen wir im Fit eine hohe Temperatur des Gases ($350$ K) im Vergleich zur Raumtemperatur, was aber lediglich diese größere Breite widerspiegelt.
 
-Man beobachtet, dass die ermittelten Werte zwar nah an den Literaturwerten liegen, aber nicht immer kompatibel sind. In der Tat können wir erwarten, dass unsere Messunsicherheiten größer als die vom Fit ergebenen Werten sind, möglicherweise wegen Schwankungen des Lasers. Da wir sowohl positive als auch negative Abweichungen beobachten, ist es unwahrscheinlich, dass ein systematischer Fehler vorliegt.
+Man beobachtet, dass die ermittelten Werte mit den Literaturwerten meistens übereinstimmen. Unseren abgeschätzten Unsicherheiten sind wesentlich größer als die vom Fit ergebenden Standardabweichungen, da die Peaks oft nicht genau unterscheidbar sind, wie man in Abbildung \ref{fig:Abbildung1} sehen kann.
 
-Eine größere Abweichung ist im Wert der Energiedifferenz zwischen den p-Hyperfeinniveaus $F=0$ und $F=1$ bei Rb 87 zu erkennen. Ein möglicher Grund dafür ist die Tatsache, dass der mittlere Peak unscharf und unsymmetrsich ist, wie es im letzten Plot der Abbildung \ref{fig:Abbildung1} zu sehen ist. Daher ist die Resonanzfrequenz nicht genau zu ermitteln.
+Eine größere Abweichung ist im Wert der Energiedifferenz zwischen den p-Hyperfeinniveaus $F=0$ und $F=1$ bei Rb 87 zu erkennen. Ein möglicher Grund dafür ist die Unschärfe des mittleren Peaks, wie es im letzten Plot der Abbildung \ref{fig:Abbildung1} zu sehen ist. Daher ist die Resonanzfrequenz nicht genau zu ermitteln.
+
+\section{Abschluss}
+
+In diesem Versuch wurden die theoretischen Vorhersagen zur Hyperfeinstruktur des Rubidium-Atoms nachgewiesen. Der Mechanismus der Sättigungsspektroskopie wurde erfolgreich ausgenutzt, um die Dopplerverbreiterung zu umgehen und die Energieabstände der Hyperfeinniveaus zu messen, und wir konnten auch das Auftauchen der sogenannten Cross-Over-Peaks beobachten. Der Gauß-Peak und der Lorentz-Peak haben sich als kompatible Kurven zur modellierung der Dopplerverbreiterung, bzw. der natürlichen Linienbreite, erwiesen. Außerdem waren die gemessenen Werte in den meisten Fällen kompatibel zu den Literaturwerten.
 
 \newpage
 
