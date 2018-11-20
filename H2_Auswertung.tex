@@ -154,9 +154,11 @@ Die Geschwindigkeit der Rubidiumatome entlang der Ausbreitungsachse ist Gaußver
  Die gemessene Intensität beträgt dann
 \begin{align*}
 I(\nu) &= I_0(\nu)-\int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß}(v)(1-n(\nu, v))\sum_{j=1}^N B_j L_j(\nu_0+\nu+\nu_0 v/(2c)) \\
-&= I_0 -\sum_j B_j \int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß} L_j(\nu_0+\nu+\nu_0 v/(2c)) \\
-&+\sum_{i,j} A_iB_j \int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß} L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))
+&= I_0 -\sum_j B_j \int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß}(v) L_j(\nu_0+\nu+\nu_0 v/(2c)) \\
+&+\sum_{i,j} A_iB_j \int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß}(v) L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))
 \end{align*}
+
+In diesem Ausdruck hat die Integration über die Geschwindigkeit die Bedeutung, dass man die absorbierte Intensität, die von der Geschwindigkeit abhängt, jedes Atoms aufsummiert, was in dem Fall zur Aufintegrierung über die Geschwindigkeiten genähert wird, gewichtet mit der Häufigkeit dieser Geschwindigkeit. Wie schon angedeutet ist die Geschwindigkeit Gaußverteilt.
 
 Mit Konstanten $B_1, ..., B_N$ und Ausgangsintensität $I_0(\nu)$. Der zweite Summand ist der selbe Term wie bei der Absorbtionsspektroskopie. Den dritten Summanden nähern wir, indem wir ausnutzen, dass  $L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$ nur für $v \approx 2c \frac{\nu_i-\nu}{\nu_0}$ nicht verschwindend ist. Deshalb können wir $f_{Gauß}(v)$ als konstant annehmen und der dritte Summand wird $\sum_{i,j} A_iB_j f_{Gauß}(2c \frac{\nu_i-\nu}{\nu_0}) T_{ij}$ mit
 $$T_{ij}=\int_{-\infty}^\infty dv L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$$
