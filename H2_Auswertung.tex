@@ -141,33 +141,33 @@ Damit ergeben sich die Abstände im Termschema zu $\nu_2 - \nu_1 = 1.103 \pm 0.0
 \subsection{Sättigungsspektroskopie}
 
 Wir betrachten nun alle 12 Übergänge getrennt. Sei $L_i(\cdot )$ die Linienbreite des $i$-ten Übergang, bevor die Dopplerverbeiterung betrachtet wird. Sie erreicht ihr Maximum bei $\nu_0+\nu_i$. Atome, die sich mit Geschwindigkeit $v$ relativ zum Laser bewegen, sehen die verschobene Linienform
-$$\tilde{L_i}(\nu_0+\nu) = L_i((\nu_0+\nu)(1-v/c)) \approx L_i(\nu_0+\nu-\nu_0 v/c)$$
-wobei die Näherung gilt da $\nu \ll \nu_0$.\\
+$$\tilde{L_i}(\nu_0+\nu) = L_i((\nu_0+\nu)\sqrt{1-(v/c)^2}) \approx L_i(\nu_0+\nu-\nu_0 v/(2c))$$
+wobei die Näherung gilt da $v \ll c$ und $\nu \ll \nu_0$.\\
   Der vom Pumpstrahl mit Frequenz $\nu_0+\nu$ angeregte Anteil der Atome mit Geschwindigkeit $v$ beträgt damit
 
-$$n(\nu, v) = \sum_{i=1}^N A_i L_i(\nu_0+\nu-\nu_0 v/c)$$
+$$n(\nu, v) = \sum_{i=1}^N A_i L_i(\nu_0+\nu-\nu_0 v/(2c))$$
 
 mit Konstanten $A_1, ..., A_N$.\\
 
-Die Geschwindigkeit der Rubidiumatome entlang der Ausbreitungsachse ist Gaußverteilt: $f_{Gauß}(v) = \sqrt{m/(2\pi k_B T)} e^{-mv^2/(2k_BT)}$. Die von Atome mit Geschwindigkeit $v$ absorbierte Intensität des Teststrahl ist proportional zur Anteil dieser Atome im Grundzustand $\mathrm{d}v f_{Gauß}(v)(1-n(\nu, v))$ und zur Übergangswahrscheinlichkeit des $j$-ten Übergangs für die vom Atom wahrgenommene dopplerverschobene Frequenz $L_j(\nu_0+\nu+\nu_0 v/c)$. Die Dopplerverschiebung hat dabei das entgegengesetzte Vorzeichen, da der Teststrahl die Atome in umgekehrte Richtung wie der Pumpstrahl durchquert.
+Die Geschwindigkeit der Rubidiumatome entlang der Ausbreitungsachse ist Gaußverteilt: $f_{Gauß}(v) = \sqrt{m/(2\pi k_B T)} e^{-mv^2/(2k_BT)}$. Die von Atome mit Geschwindigkeit $v$ absorbierte Intensität des Teststrahl ist proportional zur Anteil dieser Atome im Grundzustand $\mathrm{d}v f_{Gauß}(v)(1-n(\nu, v))$ und zur Übergangswahrscheinlichkeit des $j$-ten Übergangs für die vom Atom wahrgenommene dopplerverschobene Frequenz $L_j(\nu_0+\nu+\nu_0 v/(2c))$. Die Dopplerverschiebung hat dabei das entgegengesetzte Vorzeichen, da der Teststrahl die Atome in umgekehrte Richtung wie der Pumpstrahl durchquert.
 
  Die gemessene Intensität beträgt dann
 \begin{align*}
-I(\nu) &= I_0(\nu)-\int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß}(v)(1-n(\nu, v))\sum_{j=1}^N B_j L_j(\nu_0+\nu+\nu_0 v/c) \\
-&= I_0 -\sum_j B_j \int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß}(v) L_j(\nu_0+\nu+\nu_0 v/c) \\
-&+\sum_{i,j} A_iB_j \int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß}(v) L_i(\nu_0+\nu-\nu_0 v/c) L_j(\nu_0+\nu+\nu_0 v/c)
+I(\nu) &= I_0(\nu)-\int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß}(v)(1-n(\nu, v))\sum_{j=1}^N B_j L_j(\nu_0+\nu+\nu_0 v/(2c)) \\
+&= I_0 -\sum_j B_j \int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß}(v) L_j(\nu_0+\nu+\nu_0 v/(2c)) \\
+&+\sum_{i,j} A_iB_j \int_{-\infty}^{\infty} \mathrm{d}v f_{Gauß}(v) L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))
 \end{align*}
 
-In diesem Ausdruck hat die Integration über die Geschwindigkeit die Bedeutung, dass man die absorbierte Intensität, die von der Geschwindigkeit abhängt, jedes Atoms aufsummiert, was in dem Fall zur Aufintegrierung über die Geschwindigkeiten genähert wird, gewichtet mit der Häufigkeit dieser Geschwindigkeit. Wie schon angedeutet ist die Geschwindigkeit Gaußverteilt.
+In diesem Ausdruck hat die Integration über die Geschwindigkeit die Bedeutung, dass man die absorbierte Intensität aller Atome aufsummiert. Die absorbierte Intensität hängt von der Geschwindigkeit ab, und in dem Fall wird die Summe durch ein Integral über alle Geschwindigkeiten genähert, gewichtet mit der Häufigkeit der einzelnen Geschwindigkeiten. Wie schon angedeutet ist die Geschwindigkeit Gaußverteilt.
 
-Mit Konstanten $B_1, ..., B_N$ und Ausgangsintensität $I_0(\nu)$. Der zweite Summand ist der selbe Term wie bei der Absorbtionsspektroskopie. Den dritten Summanden nähern wir, indem wir ausnutzen, dass  $L_i(\nu_0+\nu-\nu_0 v/c) L_j(\nu_0+\nu+\nu_0 v/c)$ nur für $v \approx c \frac{\nu_i-\nu}{\nu_0}$ nicht verschwindend ist. Deshalb können wir $f_{Gauß}(v)$ als konstant annehmen und der dritte Summand wird $\sum_{i,j} A_iB_j f_{Gauß}(c \frac{\nu_i-\nu}{\nu_0}) T_{ij}$ mit
-$$T_{ij}=\int_{-\infty}^\infty dv L_i(\nu_0+\nu-\nu_0 v/c) L_j(\nu_0+\nu+\nu_0 v/c)$$
+Mit Konstanten $B_1, ..., B_N$ und Ausgangsintensität $I_0(\nu)$. Der zweite Summand ist der selbe Term wie bei der Absorbtionsspektroskopie. Den dritten Summanden nähern wir, indem wir ausnutzen, dass  $L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$ nur für $v \approx 2c \frac{\nu_i-\nu}{\nu_0}$ nicht verschwindend ist. Deshalb können wir $f_{Gauß}(v)$ als konstant annehmen und der dritte Summand wird $\sum_{i,j} A_iB_j f_{Gauß}(2c \frac{\nu_i-\nu}{\nu_0}) T_{ij}$ mit
+$$T_{ij}=\int_{-\infty}^\infty dv L_i(\nu_0+\nu-\nu_0 v/(2c)) L_j(\nu_0+\nu+\nu_0 v/(2c))$$
 
 
 Sei $L_\gamma$ die Lorentzverteilung um 0 mit FWHM $\gamma$. Wir nehmen $L_i(x) = L_{\gamma_i}(x-(\nu_0+\nu_i))$ an. Dann ist
 
 \begin{align*}
-T_{ij} &= \frac{c}{\nu_0}\int_{-\infty}^\infty du L_{\gamma_i}(2\nu-(\nu_i+\nu_j)-u)L_{\gamma_j}(u)\\
+T_{ij} &= \frac{2c}{\nu_0}\int_{-\infty}^\infty du L_{\gamma_i}(2\nu-(\nu_i+\nu_j)-u)L_{\gamma_j}(u)\\
 &= \frac{2c}{\nu_0} (L_{\gamma_i} * L_{\gamma_j})(2\nu-(\nu_i+\nu_j)) \\
 &= \frac{2c}{\nu_0} L_{\gamma_i+\gamma_j}(2\nu-(\nu_i+\nu_j)) \\
 \end{align*}
@@ -181,7 +181,7 @@ I(\nu) = I_0(\nu)-\sum_{i=1}^N B_i e^{-mc^2(\nu-\nu_i)^2/(2k_BT\nu_0^2)} +\sum_{
 \end{equation}
 
 
-mit Konstanten $C_{ij} = (2-\delta_{ij})A_iB_jf_{Gauß}(c \frac{\nu_i-\nu}{\nu_0})\frac{c}{\nu_0}$. Wir haben $T_{ij}=T_{ji}$ ausgenutzt.\\
+mit Konstanten $C_{ij} = (2-\delta_{ij})A_iB_jf_{Gauß}(2c \frac{\nu_i-\nu}{\nu_0})\frac{2c}{\nu_0}$. Wir haben $T_{ij}=T_{ji}$ ausgenutzt.\\
 
 Wir haben jeden der vier großen Peaks individuell gefittet. Ein Fit mit der Funktion aus (\ref{SaettigungsFit1}) war jedoch leider nicht möglich, der Fit ist nicht konvergent. Wir führen das darauf zurück, dass die Variation der $B_i$ die Funktion kaum verändert, solange ihre Summe konstant bleibt. Stattdessen haben wir, wie bei der Absorbtionsspektroskopie, die Gaußpeaks zu einem einzelnen zusammengefasst und mit der Funktion
 
